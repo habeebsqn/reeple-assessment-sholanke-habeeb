@@ -6,17 +6,10 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-} from 'react-native';
+import {SafeAreaView, useColorScheme} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {Provider} from 'react-redux';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import Routes from './app/routes';
 import store from './app/store';
@@ -27,16 +20,8 @@ function App(): React.JSX.Element {
   const queryClient = new QueryClient();
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle} className="flex-1">
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
+    <SafeAreaView className="flex-1">
       <GestureHandlerRootView className="flex-1">
         <BottomSheetModalProvider>
           <QueryClientProvider client={queryClient}>

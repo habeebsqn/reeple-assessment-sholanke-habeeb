@@ -1,26 +1,39 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is my reeple assessment app project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+it's important you follow the instructions for setting up a react native projects thus i left the initial configuration instructions
+
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding also have the latest version of andriod studio for better project bootstrapping
 
 ## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+First, you will need to start clone the project to your pc to have the project folder then open in andriod studio or vscode make to wait for the java compilation to complete.
+To install all dependencies and libraries , run the following command from the _root_ of the project:
 
 ```bash
 # using npm
-npm start
 
-# OR using Yarn
-yarn start
+1. Clone the repository:
+
+   git clone < habeebsqn/reeple-assessment-habeeb-sholanke >
+
+
+2. Install dependencies:
+
+   npm install
+
+
+3. Start the application:
+
+   npm start
+
+
 ```
 
 ## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start the _Android_ app:
 
 ### For Android
 
@@ -32,48 +45,42 @@ npm run android
 yarn android
 ```
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+If everything is set up _correctly_, you should see the app running in your _Android Emulator_ shortly, provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Step 3: project documentation
 
-Now that you have successfully run the app, let's modify it.
+# Currency Converter Application
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Overview
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+The Currency Converter Application allows users to convert between different currencies, providing real-time exchange rates and user-friendly interface options.
 
-## Congratulations! :tada:
+## Features
 
-You've successfully run and modified your React Native App. :partying_face:
+- _Currency Conversion_: Users can convert a specified amount of one currency (base currency) into another currency (target currency).
+- _Real-Time Exchange Rates_: Provides real-time exchange rates for selected currencies, with USD as the base currency.
+- _Currency Selection_: Users can choose both base and target currencies from a list of supported currencies.
+- _Currency Swap_: Allows users to invert base and target currencies with a single tap, facilitating quick conversion adjustments.
 
-### Now what?
+- _Technologies Used_: Utilizes Axios for API requests, TanStack Query for api state management, Redux for global state, React Native Navigation for navigation flows, and TypeScript for enhanced typing external npm library react native cli.
+- _Security_: Implements secure handling of API keys and configurations to ensure data privacy with env file.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+- _React Native CLI Configuration_: Configuring React Native CLI posed initial challenges, particularly compatibility with libraries and tools.
+- _Compatibility Issues_: Faced compatibility issues with React Native Reanimated during development, requiring research and updates to resolve.
 
-# Troubleshooting
+## File Structure
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+The project follows a structured file organization for clarity and maintainability:
 
-# Learn More
+- **/app**: Entry point of the application containing main routes and configurations.
+- **/components**: Reusable UI components for consistent user interface elements.
+- **/screens**: Individual screen components such as ConverterScreen.js, RatesScreen.js, etc.
+- **/api**: Configuration files for API requests and additional data configurations.
 
-To learn more about React Native, take a look at the following resources:
+## APK file
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+below is the link to the release apk file
+
+https://drive.google.com/file/d/16-L3CDh7XSGNpAMs4Aphq8hSiDXpRymi/view?usp=drive_link
